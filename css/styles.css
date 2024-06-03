@@ -1,1 +1,157 @@
-/* Ini css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #0c1022;
+    color: #fff;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background-color: rgb(17, 22, 49);
+    border-bottom: 1px solid #04060c;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 9999;
+}
+
+.navbar .logo {
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar .navbar-nav a {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.3rem;
+    margin: 0 1rem;
+}
+
+.navbar .navbar-nav a:hover {
+    color: rgb(231, 50, 50);
+}
+
+.hero .content {
+    padding: 10rem;
+    margin: 0;
+    max-width: 60rem;
+}
+
+.hero .content h1 {
+    font-size: 5em;
+    color: #fff;
+    text-shadow: 1px 1px 3px #04060c;
+    line-height: 1.1;
+}
+
+.hero .content h1 span {
+    color: rgb(47, 74, 191);
+}
+
+.hero .content p {
+    font-size: 1.3rem;
+    margin-top: 1rem;
+    line-height: 1;
+    font-weight: 100;
+}
+
+/* About Section */
+#about {
+    padding: 100px 0;
+    margin-bottom: 70px;
+}
+
+.about-me {
+    display: flex;
+    max-width: 95%;
+    margin: 50px auto;
+    width: 1130px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about-me img {
+    width: 560px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.about-text {
+    width: 560px;
+}
+
+.about-text h2 {
+    color: #fff;
+    font-size: 60px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    border-bottom: 2px solid rgb(47, 74, 191);
+}
+
+span {
+    color: rgb(47, 74, 191);
+}
+
+.about-text h4 {
+    color: white;
+    letter-spacing: 2px;
+    font-size: 22px;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+}
+
+.about-text p{
+    color: #fff;
+    font-size: 15px;
+}
+
+/* Hobi Section */
+.hobi h1 {
+    text-align: center;
+    font-size: 2.6rem;
+    margin-bottom: 3rem;
+}
+
+#hobi {
+    display: flex;
+    flex-direction: column;
+    background-color: #0c1022;
+    font-size: 20px;
+    align-items: center;
+    padding: 10px; 
+    color: #fff;
+}
+
+#hobi .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+
+#hobi .gallery img {
+    width: calc(30% - 20px);
+    height: auto;
+    margin: 15px; 
+    transition: opacity 0.3s;
+    border-radius: 50%;
+    height: 20%;
+}
+
+#hobi .gallery img:hover{
+    opacity: 0.7;
+}
+
