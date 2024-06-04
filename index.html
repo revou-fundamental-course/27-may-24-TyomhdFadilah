@@ -1,66 +1,91 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <nav class="navbar">
+            <a href="#" class="logo">Portfolio</a>
 
-<!-- Fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,700;1,700&display=swap" rel="stylesheet">
+            <div class="navbar-nav">
+                <a href="#">Home</a>
+                <a href="#about">Tentang Kami</a>
+                <a href="#hobi">Hobi</a>
+                <a href="#contac">Contac</a>
+            </div>
+        </nav>
 
-<!-- My Style -->
-<link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-    <nav class="navbar">
-        <a href="#" class="logo">Portfolio</a>
-
-        <div class="navbar-nav">
-            <a href="#">Home</a>
-            <a href="#about">Tentang Kami</a>
-            <a href="#hobi">Hobi</a>
-            <a href="#contac">Contac</a>
+        <section class="hero" id="home">
+            <main class="content">
+                <h1>I'm Tyo Muhamad <span>Fadilah</span></h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, natus.</p>
+            </main>
+        </section>
+        
+    <!-- About Section start-->
+    <section id="about">
+        <div class="about-me">
+            <img src="img/boy.png">
+            <div class="about-text">
+                <h2>Tentang <span>Kami</span></h2>
+                <h4>Tyo Muhamd Fadilah</h4>
+                <P>My experience is that I have been an editor
+                    on a radio or television broadcast and I like it
+                    learn coding or web programming. I'm interested here
+                    with software engineers or software developers.
+                </P>
+            </div>
         </div>
-    </nav>
-
-    <section class="hero" id="home">
-        <main class="content">
-            <h1>I'm Tyo Muhamad <span>Fadilah</span></h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, natus.</p>
-        </main>
     </section>
-    
-<!-- About Section start-->
-<section id="about">
-    <div class="about-me">
-        <img src="img/boy.png">
-        <div class="about-text">
-            <h2>Tentang <span>Kami</span></h2>
-            <h4>Tyo Muhamd Fadilah</h4>
-            <P>My experience is that I have been an editor
-                on a radio or television broadcast and I like it
-                learn coding or web programming. I'm interested here
-                with software engineers or software developers.
-            </P>
-        </div>
-    </div>
-</section>
-<!-- About Section end-->
+    <!-- About Section end-->
 
-<!-- Hobi Section start -->
-<secion id="hobi">
-    <h1 class="headings">HOBI</h1>
-    <div class="gallery">
-        <img src="img/hobi1.jpg" alt="">
-        <img src="img/hobi4.jpg" alt="">
-        <img src="img/gambar.jpg" alt="">
-        <img src="img/hobi3.jpg" alt="">
-        <img src="img/hobi2.jpg" alt="">
-        <img src="img/baca.jpg" alt="">
-    </div>
-</secion>
-<!-- Hobi Section end -->
-</body>
-</html>
+    <!-- Hobi Section start -->
+    <section id="hobi">
+        <h1 class="headings">Hobi <span>Kami</span></h1>
+        <div class="gallery">
+            <img src="img/hobi1.jpg" alt="">
+            <img src="img/hobi4.jpg" alt="">
+            <img src="img/gambar.jpg" alt="">
+            <img src="img/hobi3.jpg" alt="">
+            <img src="img/hobi2.jpg" alt="">
+            <img src="img/baca.jpg" alt="">
+        </div>
+    </section>
+    <!-- Hobi Section end -->
+    
+    <section id="contac">
+        <form name="message-form" onsubmit="return validateForm()">
+            Nama: <input placeholder="Nama" type="text" name="full-name"/>
+            <br />
+    
+            Tanggal Lahir:
+            <input type="date" name="birth-date" />
+            <br />
+    
+            Jenis Kelamin:
+            <input type="radio" id="male" name="gender" value="male" />
+            <label for="male">Laki-Laki</label>
+            <input type="radio" id="female" name="gender" value="male" />
+            <label for="female">Perempuan</label>
+            <br />
+    
+            Pesan:
+            <textarea placeholder="Pesan" name="messages"></textarea>
+            <br />
+    
+            <input type="submit"  value="Sublit" />
+    
+            <div>
+                <p>Nama: <span id="sender-full-name"></span></p>
+                <p>Tanggal Lahir: <span id="sender-birth-date"></span></p>
+                <p>Jenis Kelamin: <span id="sender-gender"></span></p>
+                <p>Pesan: <span id="sender-messages"></span></p>
+            </div>
+        </form>
+    </section>
+    <script src="js/script.js"></script>
+    </body>
+    </html>
