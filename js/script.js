@@ -1,7 +1,7 @@
 function validateForm() {
     var fullName = document.forms["message-form"]["full-name"].value;
     var birthDate = document.forms["message-form"]["birth-date"].value;
-     var gender = document.querySelector('input[name="gender"]:checked');
+    var gender = document.querySelector('input[name="gender"]:checked');
     var messages = document.forms["message-form"]["messages"].value;
 
     if (fullName == "" || birthDate == "" || !gender || messages == "") {

@@ -49,6 +49,7 @@ body {
     max-width: 55rem;
 }
 
+
 .hero .content h1 {
     font-size: 5em;
     color: #fff;
@@ -205,4 +206,114 @@ form div {
 
 form div p {
     margin: 5px 0;
+}
+
+/* Tampilan untuk perangkat mobile */
+@media only screen and (max-width: 768px) {
+    /* Hide navbar menu on mobile */
+    .navbar .navbar-nav {
+        display: none;
+    }
+
+    /* Show hamburger menu icon */
+    #hambuger-menu {
+        display: block;
+    }
+
+    /* Adjust hamburger menu icon size and color */
+    #hambuger-menu i {
+        fill: #fff;
+        width: 24px;
+        height: 24px;
+    }
+
+    /* Adjust font size and image width for better mobile layout */
+    .navbar .logo {
+        font-size: 20px;
+    }
+
+    .hero .content {
+        padding: 5rem;
+        max-width: 100%;
+    }
+
+    .about-me {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .about-me img {
+        width: 100%;
+        max-width: 400px;
+        margin-bottom: 20px;
+    }
+
+    .about-text {
+        width: 100%;
+    }
+
+    .about-text h2 {
+        font-size: 40px;
+    }
+
+    .about-text h4 {
+        font-size: 18px;
+    }
+
+    #hobi .gallery img {
+        max-width: 200px;
+    }
+
+    #contac form {
+        max-width: 100%;
+    }
+}
+
+/* Tampilan untuk perangkat desktop */
+@media only screen and (min-width: 769px) {
+    /* Show navbar menu on desktop */
+    .navbar .navbar-nav {
+        display: flex;
+    }
+
+    /* Hide hamburger menu icon on desktop */
+    #hambuger-menu {
+        display: none;
+    }
+
+    /* Adjust font size and image width for better desktop layout */
+    .navbar .logo {
+        font-size: 25px;
+    }
+
+    .hero .content {
+        padding: 10rem;
+        max-width: 55rem;
+    }
+
+    .about-me {
+        width: 1130px;
+    }
+
+    .about-me img {
+        width: 560px;
+        max-width: 100%;
+        margin-bottom: 0;
+    }
+
+    .about-text h2 {
+        font-size: 60px;
+    }
+
+    .about-text h4 {
+        font-size: 22px;
+    }
+
+    #hobi .gallery img {
+        max-width: 250px;
+    }
+
+    #contac form {
+        max-width: 600px;
+    }
 }
