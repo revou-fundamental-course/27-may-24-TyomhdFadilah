@@ -29,3 +29,20 @@ document.addEventListener("DOMContentLoaded", function() {
         document.getElementById("sender-messages").textContent = messages;
     });
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    // Select the hamburger menu icon
+    var hamburgerMenuIcon = document.getElementById("hambuger-menu");
+
+    // Select the navbar-nav element
+    var navbarNav = document.querySelector(".navbar-nav");
+
+    // Add click event listener to the hamburger menu icon
+    hamburgerMenuIcon.addEventListener("click", function() {
+        // Toggle the 'active' class on the hamburger menu icon
+        this.classList.toggle("active");
+
+        // Toggle the visibility of the navbar-nav
+        navbarNav.classList.toggle("active");
+    });
+});

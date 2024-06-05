@@ -124,7 +124,7 @@ body {
     flex-direction: column;
     font-size: 20px;
     align-items: center;
-    padding: 100px 0;
+    padding: 150px 0;
     margin-bottom: 95px;
     color: #fff;
 }
@@ -210,24 +210,48 @@ form div p {
 
 /* Tampilan untuk perangkat mobile */
 @media only screen and (max-width: 768px) {
-    /* Hide navbar menu on mobile */
     .navbar .navbar-nav {
         display: none;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 80px; 
+        left: 0;
+        width: 100%;
+        background-color: rgba(17, 22, 49, 0.5); 
+        padding: 20px 0;
     }
 
-    /* Show hamburger menu icon */
+    .navbar .navbar-nav.active {
+        display: flex;
+    }
+
+    .navbar .navbar-nav a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 1.3rem;
+        margin: 10px 0;
+    }
+
+
     #hambuger-menu {
         display: block;
     }
 
-    /* Adjust hamburger menu icon size and color */
     #hambuger-menu i {
         fill: #fff;
         width: 24px;
         height: 24px;
     }
 
-    /* Adjust font size and image width for better mobile layout */
+    #hobi .gallery {
+        grid-template-columns: 1fr;
+    }
+
+    #contac form {
+        max-width: 100%;
+    }
+    
     .navbar .logo {
         font-size: 20px;
     }
@@ -256,10 +280,6 @@ form div p {
         font-size: 40px;
     }
 
-    .about-text h4 {
-        font-size: 18px;
-    }
-
     #hobi .gallery img {
         max-width: 200px;
     }
@@ -271,17 +291,14 @@ form div p {
 
 /* Tampilan untuk perangkat desktop */
 @media only screen and (min-width: 769px) {
-    /* Show navbar menu on desktop */
     .navbar .navbar-nav {
         display: flex;
     }
 
-    /* Hide hamburger menu icon on desktop */
     #hambuger-menu {
         display: none;
     }
 
-    /* Adjust font size and image width for better desktop layout */
     .navbar .logo {
         font-size: 25px;
     }
@@ -305,15 +322,9 @@ form div p {
         font-size: 60px;
     }
 
-    .about-text h4 {
-        font-size: 22px;
-    }
 
     #hobi .gallery img {
         max-width: 250px;
     }
 
-    #contac form {
-        max-width: 600px;
-    }
 }
